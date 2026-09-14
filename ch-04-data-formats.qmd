@@ -503,6 +503,8 @@ Five news outlets and five data/tech podcasts, researched as of September 2026. 
 
 AP and Reuters are conspicuously absent: both discontinued their public RSS feeds (Reuters in 2020, AP some time after) — a small, real instance of the decline this chapter describes below.
 
+Robots.txt isn't just about disallow rules for a url. Some sites put alot of actual restrictions in a comment instead, like the guardian's robots.txt saying you cant use their content for all the A.I stuff, even though its not an actual disallow rule. It is very easy to miss if youre only checking for disallow lines.
+
 **Podcasts (data, tech, and data journalism)**
 
 | Podcast | Feed |
