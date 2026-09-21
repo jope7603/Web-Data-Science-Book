@@ -117,7 +117,7 @@ print(f"{location['city']}, {location['country']}")
 
 ## DNS: The Address Book
 
-The Domain Name System translates human-readable domain names (like `en.wikipedia.org`) into IP addresses that computers can route to. You can perform DNS lookups programmatically with the `dnspython` library:
+The Domain Name System translates human-readable domain names (like `en.wikipedia.org`) into IP addresses that computers can route to. You can perform DNS lookups programmatically with the `dnspython` library: This can be installed with the 'pip install dnspython' and you import it with 'dns':
 
 ```{python}
 import dns.resolver
