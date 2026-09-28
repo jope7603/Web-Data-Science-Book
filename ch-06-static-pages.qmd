@@ -453,6 +453,7 @@ You will take one Wikipedia table from raw HTML to a cleaned, visualized dataset
 ```
 
 **Step 3 — Extract with `read_html()`.** Run `pd.read_html()` on the cached HTML. Print how many tables it found, look at the `head()` of a few, and identify the index of the table you want.
+##A good tip would be to wrap your HTML in `StringIO` so pandas doesn't warn you: pd.read_html(StringIO(html)).
 
 ```{python}
 # Step 3: Run pd.read_html on the cached HTML, count the tables, and pick out yours.
