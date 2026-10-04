@@ -141,7 +141,7 @@ The Availability API finds one snapshot near a date. The CDX Server API lets you
 ```{python}
 import requests
 import pandas as pd
-
+HEADERS = {"User-Agent": "webdatascience (email@colorado.edu)"}
 # Query all snapshots of Facebook's Terms of Service
 cdx_url = "https://web.archive.org/cdx/search/cdx"
 params = {
@@ -152,7 +152,7 @@ params = {
     "collapse": "digest",        # Server-side: skip consecutive identical captures
 }
 
-response = requests.get(cdx_url, params=params)
+response = requests.get(cdx_url, params=params, headers = HEADERS)
 data = response.json()
 
 # First row is column headers, rest is data
